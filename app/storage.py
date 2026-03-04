@@ -15,11 +15,11 @@ def load_data():
             return json.load(file)
     except FileNotFoundError:
         with open (json_filePath, "w") as file:
-            file.write("[]")
+            json.dump([], file, indent=4)
         return []
     except json.JSONDecodeError:
         with open (json_filePath, "w") as file:
-            file.write("[]")
+            json.dump([], file, indent=4)
         return []
 
 
