@@ -10,20 +10,22 @@ def ensure_data_folder():
 
 def load_data():
     try:
-        ensure_data_folder()
         with open (json_filePath, "r") as file:
             return json.load(file)
     except FileNotFoundError:
+        ensure_data_folder()
         with open (json_filePath, "w") as file:
             json.dump([], file, indent=4)
         return []
     except json.JSONDecodeError:
+        ensure_data_folder()
         with open (json_filePath, "w") as file:
             json.dump([], file, indent=4)
         return []
 
 
 def save_data(data):
+    ensure_data_folder()
     with open (json_filePath, "w") as file:
         json.dump(data, file, indent=4)
 

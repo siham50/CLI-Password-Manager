@@ -2,3 +2,4 @@ venv/
 data/key.key
 __pycache__/
 *.pyc
+data/master.key
