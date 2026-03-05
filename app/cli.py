@@ -8,7 +8,10 @@ def menu():
     if auth.auth():
         print("Login successful. Welcome.")
         while True:
-            print("1. Add password\n 2. View password\n 3. Delete password\n 4. Exit\n")
+            print("\n1. Add password\n"
+                  "2. View password\n" 
+                  "3. Delete password\n" 
+                  "4. Exit\n")
             option = input ("Choose an option: ")
 
             if option == "1":
