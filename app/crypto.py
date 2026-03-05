@@ -27,12 +27,12 @@ def load_key():
 
 fernet_object = Fernet(load_key())
 
-def encrypt_password(password : str) -> bytes:
+def encrypt_password(password : str) -> str:
         if not(isinstance(password, str)):
             raise TypeError
         elif password == "":
             raise ValueError
-        return fernet_object.encrypt(password.encode())
+        return fernet_object.encrypt(password.encode()).decode()
 
 
 def decrypt_password(encrypted_password : bytes) -> str:
