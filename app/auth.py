@@ -42,7 +42,7 @@ def auth():
     try:
         with open (master_path, "r") as file:
             data = file.read()
-        if not data or data.strip() == "":
+        if not data:
             return master_hash()
         else:
             while(password_attempts < 3):
