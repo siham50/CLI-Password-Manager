@@ -14,16 +14,20 @@ def generate_key():
     ensure_data_folder()
     with open (KEY_PATH, "wb") as file:
         file.write(key)
+    return key
 
 
 def load_key():
     try:
         with open (KEY_PATH, "rb") as file:
-            return file.read()
+            data = file.read()
+            if not data:
+                return generate_key()
+            else:
+                return data
     except FileNotFoundError:
-        generate_key()
-        with open (KEY_PATH, "rb") as file:
-            return file.read()
+        return generate_key()
+
 
 fernet_object = Fernet(load_key())
 

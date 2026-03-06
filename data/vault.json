@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "service": "github",
+        "username": "user",
+        "email": "user@gmail.com",
+        "password": "gAAAAABpqiMFypACjT7hsuurItHes0Q3z1j48exO_jwdXE4GVldTvq3VGJytNhGn3IhXZaDjs5UU7ElePgJAYDIUSNxEWnvYuw=="
+    },
+    {
+        "id": 2,
+        "service": "instagram",
+        "username": "user1",
+        "email": "user1@gmail.com",
+        "password": "gAAAAABpqiSRlFrjVGV06HlYk1zGuqE8dnaDt-I5qvjxN98fmho-fNXir6Tb3WHJw1v4QjXtRuC54bknRWwiPHUhn0YKPPLP_Q=="
+    },
+    {
+        "id": 3,
+        "service": "github",
+        "username": "user1",
+        "email": "user1@gmail.com",
+        "password": "gAAAAABpqiWC0liS30wGrYEOMWKB2xZq1XYl8QaIeOCOEmnHTJ-opz4lOjnmzjbd64JYPRiZxDqHJZn7libnFTSJ-YIyfWl7kA=="
+    },
+    {
+        "id": 4,
+        "service": "github",
+        "username": "user2",
+        "email": "user2@gmail.com",
+        "password": "gAAAAABpqiYFTbQ5jyifPQhgjEwMoVoYRkr9yCOrPB0bs6U5ZzW41slgQNq8Un3R-r1EOie-qZd027ndMFcs5Dx5e6lw3tPk0Q=="
+    }
+]
