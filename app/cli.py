@@ -28,17 +28,17 @@ def menu():
                         if hmac.compare_digest(password, password2):
                             storage.add_entry(service, username, email, crypto.encrypt_password(password))
                             print("The password has been successfully added.")
-                            time.sleep(3)
+                            time.sleep(2)
                             break
                         else:
                             print("Passwords do not match.")
-                            time.sleep(3)
+                            time.sleep(2)
                 except TypeError:
                     print("Wrong input type.")
-                    time.sleep(3)
+                    time.sleep(2)
                 except ValueError:
                     print("Wrong input value.")
-                    time.sleep(3)
+                    time.sleep(2)
 
             elif option == "2":
                 service = input("Enter the service name: ").strip()
@@ -49,32 +49,32 @@ def menu():
                     if confirmation in ["Y", "YES"]:
                         passwd = crypto.decrypt_password(entry["password"].encode())
                         print(f"The decrypted password: {passwd}")
-                        time.sleep(5)
+                        time.sleep(3)
                     elif confirmation in ["N", "NO"]:
                         print("Operation cancelled.")
-                        time.sleep(3)
+                        time.sleep(2)
                     else: 
                         print("Invalid choice.")
-                        time.sleep(3)
+                        time.sleep(2)
                 except ValueError:
                     print("Entry not found or empty password")
-                    time.sleep(3)
+                    time.sleep(2)
                 except TypeError:
                     print("Wrong password type.")
-                    time.sleep(3)
+                    time.sleep(2)
                 except InvalidToken:
                     print("Invalid token")
-                    time.sleep(3)
+                    time.sleep(2)
 
             elif option == "3":
                 service = input("Enter the service name: ").strip()
                 username = input("Enter the username: ").strip()
                 if storage.delete_entry(service, username):
                     print("The password has been successfully deleted.")
-                    time.sleep(3)
+                    time.sleep(2)
                 else:
                     print("Entry not found.")
-                    time.sleep(3)
+                    time.sleep(2)
             elif option == "4":
                 break
             else: 
@@ -82,5 +82,5 @@ def menu():
                 time.sleep(2)
     else:
         print("You ran out of attempts. Please try later.")
-        time.sleep(3)
+        time.sleep(2)
         return
