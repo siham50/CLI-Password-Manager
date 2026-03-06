@@ -26,5 +26,19 @@
         "username": "user2",
         "email": "user2@gmail.com",
         "password": "gAAAAABpqiYFTbQ5jyifPQhgjEwMoVoYRkr9yCOrPB0bs6U5ZzW41slgQNq8Un3R-r1EOie-qZd027ndMFcs5Dx5e6lw3tPk0Q=="
+    },
+    {
+        "id": 5,
+        "service": "gmail",
+        "username": "user",
+        "email": "user@gmail.com",
+        "password": "gAAAAABpqilrWKySEHN8gigLn0BjVzEP_FfG7Ajm4Mx4XkxrF3FWwATfojLYzqydcuJpmGW7cpa8W0HHrFKeoCQMSGgdqih7kg=="
+    },
+    {
+        "id": 6,
+        "service": "github",
+        "username": "user3",
+        "email": "user3@gmail.com",
+        "password": "gAAAAABpqjuUis1GW4lxf2t64mYgUP_DrSVRS21gi2Ymfuky9Sc3fDQFzPw5kkZUX6dDLUT1dlMt6jAa1u7rkzuAlDPMIadCBg=="
     }
 ]
